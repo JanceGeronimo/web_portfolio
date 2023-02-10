@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!------------ GOOGLE FONTS ------------>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Cabin|Lato|Fjalla+One|Montserrat|Roboto&display=swap"
+        rel="stylesheet">
+
+    <!------------ FONT AWESOME ------------>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">JNC</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#interest">Interest</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    
+    <!-- home -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h5>Hi, I am</h5>
+            <h1>Jance Geronimo</h1>
+            <h6>Associate Software Engineer</h6>
+            <!-- <p>I design chusachushusadha</p> -->
+            <a href="https://drive.google.com/u/0/uc?id=1KzBRwPlWwOJTTDXtaqBvtgtpQGRv_SNA&export=download" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="img/1.jpg">
+        </div>
+    </section>
+
+    <!-- about -->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/4.gif">
+        </div>
+
+        <div class="about-text">
+            <h3>ABOUT ME</h3>
+            <h2><span>Jance Gabriel Geronimo</span></h2>
+            <p>An Associate Software Engineer (ASE) in MDI Novare Techonlogies, Inc. He was born on
+                September 5, 2000 and lives in Lipa City, Batangas. He love music, films, anime, and
+                video games.
+            </p>
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            </div>
+            <div class="tab-contents active-tab" id="education">
+                <ul>
+                    <li>
+                        <p><span>College</span><br>University of Batangas Lipa Campus</p>
+                    </li>
+                    <li>
+                        <p><span>High School</span><br>The Mabini Academy</p>
+                    </li>
+                    <li>
+                        <p><span>Elementary</span><br>Sampaguita Elementary School</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li>
+                        <p><span>Present</span><br>Associate Software Engineer at MDI Novare Technologies, Inc.</p>
+                    </li>
+                    <li>
+                        <p><span>2022</span><br>Intern at Accenture, Inc.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="hobbies1" id="hobbies">
+        <div class="center">
+            <h3>HOBBIES</h3>
+        </div>
+        <!-- hobbies -->
+        <div class="trip-content">
+            <div class="row1">
+                <i class='bx bx-joystick' ></i>
+                <h3>Video Games</h3>
+            </div>
+            <div class="row">
+                <i class='bx bxs-piano'></i> 
+                <h3>Musical <br>Instruments</h3>
+            </div>
+            <div class="row2">
+                <i class='bx bx-bowl-rice' ></i>
+                <h3>Food Trip</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- interests -->
+    <section class="hobbies" id="interest">
+        <div class="center">
+            <h3>INTERESTS</h3>
+        </div>
+        <div class="hobby-content">
+            <div class="interest">
+                <!-- 1st slideshow -->
+                <h3><i class='bx bx-camera-movie'></i> Films</h3>
+                <div class="slider">
+                    <input type="radio" hidden name="slide" id="slide-1" checked>
+                    <input type="radio" hidden name="slide" id="slide-2">
+                    <input type="radio" hidden name="slide" id="slide-3">
+                    <input type="radio" hidden name="slide" id="slide-4">
+            
+                    <div class="slides">
+                        <div class="slide slide-1">
+                            <div class="slide-data">
+                                <a href="https://letterboxd.com/film/fight-club/">Fight Club (1999)</a><br>
+                                <p>A ticking-time-bomb insomniac and a slippery soap salesman channel primal male 
+                                    aggression into a shocking new form of therapy. Their concept catches on, with 
+                                    underground “fight clubs” forming in every town, until an eccentric gets in the way 
+                                    and ignites an out-of-control spiral toward oblivion.</p>
+                            </div>
+                        </div>
+                        <div class="slide slide-2">
+                            <div class="slide-data">
+                                <a href="https://letterboxd.com/film/pulp-fiction/">Pulp Fiction (1994)</a><br>
+                                <p>A burger-loving hit man, his philosophical partner, a drug-addled gangster’s moll and 
+                                    a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures 
+                                    unfurl in three stories that ingeniously trip back and forth in time.</p>
+                            </div>
+                        </div>
+                        <div class="slide slide-3">
+                            <div class="slide-data">
+                                <a href="https://letterboxd.com/film/interstellar/">Interstellar (2014)</a><br>
+                                <p>The adventures of a group of explorers who make use of a newly discovered wormhole 
+                                    to surpass the limitations on human space travel and conquer the vast distances 
+                                    involved in an interstellar voyage.</p>
+                            </div>
+                        </div>
+                        <div class="slide slide-4">
+                            <div class="slide-data">
+                                <a href="https://letterboxd.com/film/everything-everywhere-all-at-once/">Everything Everywhere All At Once (2022)</a><br>
+                                <p>An aging Chinese immigrant is swept up in an insane adventure, where she alone can 
+                                    save what important to her by connecting with the lives she could have led in 
+                                    other universes.</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="arrows arrow-left">
+                        <label for="slide-4">
+                            <span><i class="fas fa-angle-left"></i></span>
+                        </label>
+                        <label for="slide-1">
+                            <span><i class="fas fa-angle-left"></i></span>
+                        </label>
+                        <label for="slide-2">
+                            <span><i class="fas fa-angle-left"></i></span>
+                        </label>
+                        <label for="slide-3">
+                            <span><i class="fas fa-angle-left"></i></span>
+                        </label>
+                    </div>
+            
+                    <div class="arrows arrow-right">
+                        <label for="slide-2">
+                            <span><i class="fas fa-angle-right"></i></span>
+                        </label>
+                        <label for="slide-3">
+                            <span><i class="fas fa-angle-right"></i></span>
+                        </label>
+                        <label for="slide-4">
+                            <span><i class="fas fa-angle-right"></i></span>
+                        </label>
+                        <label for="slide-1">
+                            <span><i class="fas fa-angle-right"></i></span>
+                        </label>
+                    </div>
+            
+                    <div class="dots">
+                        <label for="slide-1"></label>
+                        <label for="slide-2"></label>
+                        <label for="slide-3"></label>
+                        <label for="slide-4"></label>
+                    </div>
+                </div>
+
+                <!-- 2nd slideshow -->
+                <h3><i class='bx bx-movie'></i> Anime</h3>
+                <div class="slider">
+                    <input type="radio" hidden name="slide1" id="slide-5" checked>
+                    <input type="radio" hidden name="slide1" id="slide-6">
+                    <input type="radio" hidden name="slide1" id="slide-7">
+                    <input type="radio" hidden name="slide1" id="slide-8">
+            
+                    <div class="slides">
+                        <div class="slide1 slide-5">
+                            <div class="slide-data">
+                                <a href="https://letterboxd.com/film/cowboy-bebop/">Cowboy Bebop (1998)</a><br>
+                                <p>In 2071, roughly fifty years after an accident with a hyperspace gateway made 
+                                    the Earth almost uninhabitable, humanity has colonized most of the rocky planets 
+                                    and moons of the Solar System. Amid a rising crime rate, the Inter Solar System 
+                                    Police (ISSP) set up a legalized contract system, in which registered bounty hunters 
+                                    (also referred to as “Cowboys”) chase criminals and bring them in alive in return for 
+                                    a reward.</p>
+                            </div>
+                        </div>
+                        <div class="slide1 slide-6">
+                            <div class="slide-data">
+                                <a href="https://letterboxd.com/film/berserk-1997/">Berserk (1997)</a><br>
+                                <p>Guts, a man who calls himself “The Black Swordsman”, looks back upon his days 
+                                    serving as a member of a group of mercenaries. Led by an ambitious, ruthless, 
+                                    and intelligent man named Griffith, together they battle their way into the 
+                                    royal court, and are forced into a fate that changes their lives.</p>
+                            </div>
+                        </div>
+                        <div class="slide1 slide-7">
+                            <div class="slide-data">
+                                <a href="https://letterboxd.com/film/monster-2004/">Monster (2004)</a><br>
+                                <p>Kenzou Tenma, a Japanese brain surgeon in Germany, finds his life in utter turmoil 
+                                    after getting involved with a psychopath that was once a former patient.</p>
+                            </div>
+                        </div>
+                        <div class="slide1 slide-8">
+                            <div class="slide-data">
+                                <a href="https://letterboxd.com/film/neon-genesis-evangelion/">Neon Genesis Evangelion (1995)</a><br>
+                                <p>At the turn of the century, the Angels returned to Earth, seeking to wipe out 
+                                    humanity in an apocalyptic fury. Devastated, mankind’s last remnants moved 
+                                    underground to wait for the day when the Angels would come back to finish the job. 
+                                    Fifteen years later, that day has come… but this time, humanity is ready to fight 
+                                    back with terrifying bio-mechanical weapons known as the Evangelions.</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="arrows arrow-left">
+                        <label for="slide-8">
+                            <span><i class="fas fa-angle-left"></i></span>
+                        </label>
+                        <label for="slide-5">
+                            <span><i class="fas fa-angle-left"></i></span>
+                        </label>
+                        <label for="slide-6">
+                            <span><i class="fas fa-angle-left"></i></span>
+                        </label>
+                        <label for="slide-7">
+                            <span><i class="fas fa-angle-left"></i></span>
+                        </label>
+                    </div>
+            
+                    <div class="arrows arrow-right">
+                        <label for="slide-6">
+                            <span><i class="fas fa-angle-right"></i></span>
+                        </label>
+                        <label for="slide-7">
+                            <span><i class="fas fa-angle-right"></i></span>
+                        </label>
+                        <label for="slide-8">
+                            <span><i class="fas fa-angle-right"></i></span>
+                        </label>
+                        <label for="slide-5">
+                            <span><i class="fas fa-angle-right"></i></span>
+                        </label>
+                    </div>
+            
+                    <div class="dots">
+                        <label for="slide-5"></label>
+                        <label for="slide-6"></label>
+                        <label for="slide-7"></label>
+                        <label for="slide-8"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- contact -->
+    <section class="social" id="contact">
+        <h4>For those who are interested</h4>
+        <h2>You can find me here</h2>
+        <ul class="app">
+            <li><a href="https://www.facebook.com/j.geronimo21/"><i class='bx bxl-facebook-circle' ></i>    Facebook</a></li>
+            <li><a href="https://www.instagram.com/jnc.geronimo/"><i class='bx bxl-instagram' ></i> Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/jance-gabriel-geronimo-755876227/"><i class='bx bxl-linkedin'></i> LinkedIn</a></li>
+            <li><a href="https://letterboxd.com/jance06/"><i class='bx bxs-film'></i>   Letterboxd</a></li>
+        </ul>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
